@@ -1,0 +1,257 @@
+body {
+    background-color: #42a1c6;
+}
+
+/* Franklin's Container */
+.fish {
+    width: 150px;
+    height: 100px;
+    animation: swim 5s infinite;
+}
+
+/* Franklin */
+.fish-body {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 40px;
+    background-color: orange;
+    border-radius: 50%;
+    width: 150px;
+    height: 100px;
+}
+
+.eye {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 20px;
+    z-index: 1;
+    background-color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.pupil {
+    position: absolute;
+    z-index: 2;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-color: black;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+.fin {
+    margin-top: -100px;
+    background-color: orange;
+    border-radius: 50%;
+    transform: rotate(40deg);
+    width: 80px;
+    height: 50px;
+}
+
+.fin-bottom {
+    margin-top: -10px;
+    transform: rotate(-40deg);
+}
+
+/* Bubbles */
+.bubbles {
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    margin-right: 50px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: .50;
+    width: 40px;
+    height: 40px;
+    animation: up 4s infinite;
+}
+
+.bubble-2 {
+    left: 350px;
+    animation: up 2s infinite;
+}
+
+.bubble-3 {
+    left: 750px;
+    opacity: .30;
+    animation: up 5s infinite;
+}
+
+.bubble-4 {
+    left: 1150px;
+    animation: up 6s infinite;
+}
+
+.bubble-5 {
+    left: 50px;
+    animation: up 5s infinite;
+}
+
+.bubble-6 {
+    left: 300px;
+    opacity: .30;
+    animation: up 3s infinite;
+}
+
+.bubble-7 {
+    left: 670px;
+    animation: up 4s infinite;
+}
+
+.bubble-8 {
+    left: 1050px;
+    opacity: .30;
+    animation: up 3s infinite;
+}
+
+/* Swim Animation */
+@keyframes swim {
+    0% {
+        transform: translateY(-50px) translateX(0) rotate(30deg);
+    }
+
+    25% {
+        transform: translateY(50px) translateX(250px) rotate(20deg);
+    }
+
+    50% {
+        transform: translateY(100px) translateX(500px);
+    }
+
+    75% {
+        transform: translateY(50px) translateX(850px) rotate(-20deg);
+    }
+
+    100% {
+        transform: translateY(-170px) translateX(1200px) rotate(-40deg);
+    }
+}
+
+@keyframes tailWiggle {
+
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes bobbing {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* Bubbles Animation */
+@keyframes up {
+    100% {
+        transform: translateY(-800px);
+    }
+}
+
+
+/* Styles for the navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    height: auto;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    /* Add some space between links */
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 100px auto;
+    padding: 40px;
+    text-align: center;
+    max-width: 600px;
+    display: block;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.contact-info {
+
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    display: inline-block;
+
+}
+
+
+/* Styles for the fish gallery */
+.fish-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    max-width: 300px;
+    display: inline-block;
+    flex: 0 0 calc(25% - 20px);
+    text-align: center;
+    flex: 0 0 calc(25% - 20px);
+    box-sizing: border-box;
+}
+
+.fish-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+.fish-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .fish-card {
+        width: 100%;
+    }
+}

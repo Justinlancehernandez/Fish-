@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-success bg-secondary">
+        <a class="navbar-brand" href="#">Fish Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="content.html">Content</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="toggleFishGallery(); showAlert('Fish Gallery')">Fish
+                        Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="fish">
+        <div class="fish-body">
+            <div class="eye">
+                <div class="pupil"></div>
+            </div>
+        </div>
+        <div class="fin"></div>
+        <div class="fin fin-bottom"></div>
+    </div>
+
+
+    <div class="bubbles bubble-1"></div>
+    <div class="bubbles bubble-5"></div>
+    <div class="bubbles bubble-2"></div>
+    <div class="bubbles bubble-6"></div>
+    <div class="bubbles bubble-3"></div>
+    <div class="bubbles bubble-7"></div>
+    <div class="bubbles bubble-4"></div>
+    <div class="bubbles bubble-8"></div>
+
+
+    <div class="fish-gallery" id="fish-gallery">
+
+        <!-- Fish Information & type -->
+        <div class="fish-card">
+            <img src="Fish pictures/bettaFish.jpg" alt="Betta Fish">
+            <h3>Betta Fish</h3>
+            <p>Also known as Siamese fighting fish, they come from Southeast Asia and are popular in aquariums
+                worldwide.</p>
+        </div>
+
+        <div class="fish-card">
+            <img src="Fish pictures/GuppyFish.jpg" alt="Guppy Fish">
+            <h3>Guppy Fish</h3>
+            <p>Guppy fish are small, live-bearing tropical freshwater fish known for their vibrant colors and
+                adaptability.</p>
+        </div>
+
+        <div class="fish-card">
+            <img src="Fish pictures/MollyFish.jpg" alt="Molly Fish">
+            <h3>Molly Fish</h3>
+            <p>Molly fish are freshwater fish with various species, often chosen for their peaceful nature and ease of
+                care.</p>
+        </div>
+
+        <div class="fish-card">
+            <img src="Fish pictures/goldfish.jpg" alt="Gold Fish">
+            <h3>Gold Fish</h3>
+            <p>Goldfish are the most popular pet fish,
+                A pet goldfish can live for up to ten years,
+                Pet Goldfish can recognize different human faces and voices</p>
+        </div>
+
+        <div class="fish-card">
+            <img src="Fish pictures/Platy Fish.jpg" alt="Platy Fish">
+            <h3>Platy Fish</h3>
+            <p>Platies are easy to care for, they breed quickly, and their keeping and feeding regimens can be easily
+                met
+                even by a beginner aquarist.</p>
+        </div>
+        <div class="fish-card">
+            <img src="Fish pictures/Silver Angelfish.jpg" alt="AngelFish Fish">
+            <h3>Angelfish Fish</h3>
+            <p>There are around 90 species of marine angelfish.
+                Some species of angelfish can live up to 15 years.</p>
+        </div>
+        <div class="fish-card">
+            <img src="Fish pictures/SwordtailFish.jpg" alt="Swordtail Fish">
+            <h3>Swordtail Fish</h3>
+            <p> They are friendly, gentle fish that flourish in small groups and interact with other fish.
+                They are live bearers, which means they give birth to live young instead of laying eggs
+            </p>
+        </div>
+        <div class="fish-card">
+            <img src="Fish pictures/zebraDanios.jpg" alt="Danios Fish">
+            <h3>Danios Fish</h3>
+            <p>Zebra danios have a silvery-gold coloration with blue striped markings running lengthwise from the gills
+                to
+                the tail.
+                They grow up to two inches.</p>
+        </div>
+        <div class="fish-card">
+            <img src="Fish pictures/Neon tetra.jpg" alt="Neon tetraFish">
+            <h3>Neon tetra Fish</h3>
+            <p>Neon tetras are shoaling fish that do best when kept in groups of six or more.
+                Neon tetras change their coloration in response to the lighting of the environment.</p>
+     
+
+        <div class="fish">
+            <div class="fish-body">
+                <div class="eye">
+                    <div class="pupil"></div>
+                </div>
+            </div>
+            <div class="fin"></div>
+            <div class="fin fin-bottom"></div>
+        </div>
+
+
+        <!-- Rest of your content -->
+
+        <script>
+            function showAlert(item) {
+                alert("You clicked: " + item);
+            }
+
+            function toggleFishGallery() {
+                var fishGallery = document.getElementById("fish-gallery");
+                if (fishGallery.style.display === "block") {
+                    fishGallery.style.display = "none";
+                } else {
+                    fishGallery.style.display = "block";
+                }
+            }
+        </script>
+</body>
+
+</html>

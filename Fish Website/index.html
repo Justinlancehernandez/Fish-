@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-success bg-secondary">
+        <a class="navbar-brand" href="#">Fish Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="toggleHome(); showAlert('Home')">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="content.html">Content</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="FishGallery.html">Fish Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="home-content" id="home-content">
+        <h1 style="text-align: center;">Welcome to Fish Website!</h1>
+
+    </div>
+    <div class="fish">
+        <div class="fish-body">
+            <div class="eye">
+                <div class="pupil"></div>
+            </div>
+        </div>
+        <div class="fin"></div>
+        <div class="fin fin-bottom"></div>
+    </div>
+    <!-- Rest of your content -->
+
+    <script>
+        function showAlert(item) {
+            alert("You clicked: " + item);
+        }
+
+        function toggleFishGallery() {
+            var fishGallery = document.getElementById("fish-gallery");
+            if (fishGallery.style.display === "block") {
+                fishGallery.style.display = "none";
+            } else {
+                fishGallery.style.display = "block";
+            }
+        }
+
+        function toggleHome() {
+            var homeContent = document.getElementById("home-content");
+            if (homeContent.style.display === "block") {
+                homeContent.style.display = "none";
+            } else {
+                homeContent.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+<div class="bubbles bubble-1"></div>
+<div class="bubbles bubble-5"></div>
+<div class="bubbles bubble-2"></div>
+<div class="bubbles bubble-6"></div>
+<div class="bubbles bubble-3"></div>
+<div class="bubbles bubble-7"></div>
+<div class="bubbles bubble-4"></div>
+<div class="bubbles bubble-8"></div>
+
+
+<script>
+    function showAlert(item) {
+        alert("You clicked: " + item);
+    }
+
+    function toggleFishGallery() {
+        var fishGallery = document.getElementById("fish-gallery");
+        if (fishGallery.style.display === "block") {
+            fishGallery.style.display = "none";
+        } else {
+            fishGallery.style.display = "block";
+        }
+    }
+
+    function toggleHome() {
+        var homeContent = document.getElementById("home-content");
+        if (homeContent.style.display === "block") {
+            homeContent.style.display = "none";
+        } else {
+            homeContent.style.display = "block";
+        }
+    }
+</script>
+
+<script src="Contact.js"></script>
+
+</body>
+
+</html>

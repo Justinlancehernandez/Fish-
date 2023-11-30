@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-success bg-secondary">
+        <a class="navbar-brand" href="#">Fish Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="content.html">Content</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="FishGallery.html">Fish Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="content">
+        <h1 style="text-align: center;">Contact Us</h1>
+        <p style="text-align: center;">Feel free to reach out to us for any inquiries or information.</p>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> FishFishball@gmail.com</p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Address:</strong> Southeast Ocean Street, Mars</p>
+        </div>
+    </div>
+
+
+    <div class="fish">
+        <div class="fish-body">
+            <div class="eye">
+                <div class="pupil"></div>
+            </div>
+        </div>
+        <div class="fin"></div>
+        <div class="fin fin-bottom"></div>
+    </div>
+
+    <div class="bubbles bubble-1"></div>
+    <div class="bubbles bubble-5"></div>
+    <div class="bubbles bubble-2"></div>
+    <div class="bubbles bubble-6"></div>
+    <div class="bubbles bubble-3"></div>
+    <div class="bubbles bubble-7"></div>
+    <div class="bubbles bubble-4"></div>
+    <div class="bubbles bubble-8"></div>
+
+
+    <!-- Rest of your content -->
+
+    <script>
+        function showAlert(item) {
+            alert("You clicked: " + item);
+        }
+
+        function toggleFishGallery() {
+            var fishGallery = document.getElementById("fish-gallery");
+            if (fishGallery.style.display === "block") {
+                fishGallery.style.display = "none";
+            } else {
+                fishGallery.style.display = "block";
+            }
+        }
+    </script>
+
+    <script src="Contact.js"></script>
+
+</body>
+
+</html>
